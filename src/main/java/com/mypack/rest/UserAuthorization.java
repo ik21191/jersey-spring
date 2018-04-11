@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.google.gson.JsonArray;
-import com.sun.jersey.core.util.Base64;
+/*import com.sun.jersey.core.util.Base64;*/
 
 @Path("/authorize")
 public class UserAuthorization {
@@ -24,13 +24,13 @@ public class UserAuthorization {
 			return Response.status(403).build();
 		}
 		
-		if(userId.equalsIgnoreCase("test") && userPassword.equalsIgnoreCase("test")) {
+		if(userId.equalsIgnoreCase("test") && userPassword.equalsIgnoreCase("test")) {/*
 			String bytes = userId + ":" + userPassword;
 			String token = Base64.encode(bytes.getBytes()).toString();
 			JsonArray jsonArray = new JsonArray();
 			jsonArray.add(token);
 			return Response.status(200).entity(jsonArray.toString()).build();
-		}
+		*/}
 		return null;
 	}
 
