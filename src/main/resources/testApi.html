@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Test API</title>
+
+<script>
+function myFunction() {
+    document.getElementById("myForm").submit();
+}
+</script>
+
+</head>
+<body>
+
+<p>Enter some text in the fields below, then press the "Submit form" button to submit the form.</p>
+
+<form id="myForm" method="POST" action="http://10.50.8.220/scholarlystats_alpha/services/userservice/login?user=1@mpsinsight.com&pwd=123456" enctype="application/x-www-form-urlencoded">
+  <!--First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>-->
+  <input type="button" onclick="myFunction()" value="Submit form">
+</form>
+<br/>
+
+<h1>File Upload Example - howtodoinjava.com</h1>
+     
+        <form action="http://localhost:8080/scholarlystats_alpha/services/file/upload" method="post" enctype="multipart/form-data">
+     
+            <p>Select a file : <input type="file" name="file" /></p>
+            <input type="submit" value="Upload PDF" />
+             
+        </form>
+
+
+
+
+</body>
+</html>
